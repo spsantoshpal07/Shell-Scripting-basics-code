@@ -120,6 +120,12 @@
     # val=`expr 2 + 2`
     # echo $val
 
+    # or
+
+    ## We can use let keyword for the expressions/operations
+    # let val=2*2
+    # echo $val
+
 #---> case...esac
     # read -p "Enter name: " name
 
@@ -190,6 +196,15 @@
     # do
     #     echo $n
     #     ((n++))
+    # done
+
+    # or
+
+    # n=1
+    # while [ $n -le 10 ]
+    # do
+    #     echo $n
+    #     let n++
     # done
 
 #---> Read a file using while loop
@@ -356,8 +371,8 @@
     # => In cmd prompt type `bash -x` before script file name
     #     ex: bash -x ./hello.sh
 
-    # => In script file add '-x' after #! /bash/sh
-    #     ex: #! bash/sh -x
+    # => In script file add '-x' after #! /bin/bash
+    #     ex: #! bin/bash -x
 
     # => Inside our script code we can specify where to start debugging and where to stop debugging using `set`
     #     ex:
